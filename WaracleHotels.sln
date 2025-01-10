@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaracleHotels", "WaracleHot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaracleHotelsTests", "WaracleHotelsTests\WaracleHotelsTests.csproj", "{06DE6098-6E76-4210-94AC-D18E872B4EA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaracleHotelsDataSeeding", "WaracleHotelsDataSeeding\WaracleHotelsDataSeeding.csproj", "{E5FD036A-4480-4369-98C3-CB9E68183D23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{06DE6098-6E76-4210-94AC-D18E872B4EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06DE6098-6E76-4210-94AC-D18E872B4EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06DE6098-6E76-4210-94AC-D18E872B4EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5FD036A-4480-4369-98C3-CB9E68183D23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5FD036A-4480-4369-98C3-CB9E68183D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5FD036A-4480-4369-98C3-CB9E68183D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5FD036A-4480-4369-98C3-CB9E68183D23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

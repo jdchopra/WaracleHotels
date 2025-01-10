@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WaracleHotelsDataSeeding": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

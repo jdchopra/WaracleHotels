@@ -25,5 +25,16 @@ namespace WaracleHotels.Controllers
 
             return Ok(await Task.FromResult(hotel));
         }
+
+        [HttpPost(Name = "PostHotel")]
+        public async Task<ActionResult<Hotel>> Post(string name)
+        {
+            var hotel = new Hotel
+            {
+                Name = name
+            };
+
+            return Ok(await Task.FromResult(hotel));
+        }
     }
 }
