@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaracleHotels", "WaracleHotels\WaracleHotels.csproj", "{3C017436-039C-4859-8629-40B01A08A270}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaracleHotelsTests", "WaracleHotelsTests\WaracleHotelsTests.csproj", "{06DE6098-6E76-4210-94AC-D18E872B4EA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C017436-039C-4859-8629-40B01A08A270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C017436-039C-4859-8629-40B01A08A270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C017436-039C-4859-8629-40B01A08A270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C017436-039C-4859-8629-40B01A08A270}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06DE6098-6E76-4210-94AC-D18E872B4EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06DE6098-6E76-4210-94AC-D18E872B4EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06DE6098-6E76-4210-94AC-D18E872B4EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06DE6098-6E76-4210-94AC-D18E872B4EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
