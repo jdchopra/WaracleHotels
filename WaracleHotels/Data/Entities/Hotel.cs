@@ -1,9 +1,10 @@
-﻿namespace WaracleHotels.Data.Entities;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
+namespace WaracleHotels.Data.Entities;
+
+[Table("Hotel")]
 public class Hotel
 {
     public int Id { get; set; }
-    public string Name { get; set; }
-    public IEnumerable<Room> Rooms { get; set; }
-    public IEnumerable<Booking> Bookings { get; set; }
+    public required string Name { get; set; }
 }

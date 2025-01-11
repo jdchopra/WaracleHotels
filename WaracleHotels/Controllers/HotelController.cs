@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using WaracleHotels.Models;
+using WaracleHotels.Services;
 
 namespace WaracleHotels.Controllers
 {
@@ -8,33 +9,30 @@ namespace WaracleHotels.Controllers
     [ProducesResponseType(typeof(Hotel), 200)]
     public class HotelController : ControllerBase
     {
-        private readonly ILogger<HotelController> _logger;
+        private readonly IHotelService _hotelService;
 
-        public HotelController(ILogger<HotelController> logger)
+        public HotelController(IHotelService hotelService)
         {
-            _logger = logger;
+            _hotelService = hotelService;    
         }
 
         [HttpGet(Name = "GetHotel")]
         public async Task<ActionResult<Hotel>> Get(string name)
         {
-            var hotel = new Hotel
-            {
-                Name = name
-            };
+            var hotel = await _hotelService.GetHotelAsync(name);
 
-            return Ok(await Task.FromResult(hotel));
+            if (hotel == null)
+                return NotFound();
+
+            return Ok(hotel);
         }
 
         [HttpPost(Name = "PostHotel")]
-        public async Task<ActionResult<Hotel>> Post(string name)
+        public async Task<ActionResult> Post(string hotelName)
         {
-            var hotel = new Hotel
-            {
-                Name = name
-            };
+            await _hotelService.AddHotel(hotelName);
 
-            return Ok(await Task.FromResult(hotel));
+            return Created();
         }
     }
 }

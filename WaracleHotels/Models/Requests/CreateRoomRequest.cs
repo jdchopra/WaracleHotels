@@ -1,8 +1,7 @@
-﻿namespace WaracleHotels.Models;
+﻿namespace WaracleHotels.Models.Requests;
 
-public class Room
+public class CreateRoomRequest
 {
-    public int Id { get; set; }
     public int HotelId { get; set; }
     public RoomType RoomType { get; set; }
     public int Capacity { get; set; }

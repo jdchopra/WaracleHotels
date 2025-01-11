@@ -1,5 +1,8 @@
-﻿namespace WaracleHotels.Data.Entities;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
+namespace WaracleHotels.Data.Entities;
+
+[Table("Room")]
 public class Room
 {
     public int Id { get; set; }
